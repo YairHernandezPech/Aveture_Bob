@@ -50,11 +50,12 @@ func _on_area_2d_body_entered(body):
 		print("muerto")
 		aniPlayer.play("dead")
 		$GameOver.text = str("Game over")
+		Global.coins = 0
 		death_timer.start()
 		death_timer.connect("timeout", Callable(self, "_on_death_animation_finished"))
 	
 
-
+# Esta funcion sirve para que cuando mueras las vidas se van restando
 func _on_death_animation_finished():
 	if is_inside_tree():
 		Global.death_count -= 1 

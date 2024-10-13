@@ -45,7 +45,7 @@ _data = {
 "portal": SubResource("Animation_qncx3")
 }
 
-[node name="Node2D" type="Node2D"]
+[node name="Portal" type="Node2D"]
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("1_n3o3f")
