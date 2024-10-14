@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 
 Global="*res://Players/Global.gd"
 
+[dotnet]
+
+project/assembly_name="AventuraDeBob"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
